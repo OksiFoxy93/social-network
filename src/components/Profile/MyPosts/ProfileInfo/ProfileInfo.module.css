@@ -1,0 +1,8 @@
+.avatar {
+    max-width: 150px;
+    margin: 0 15px;
+  }
+
+.info {
+  display: flex;
+}

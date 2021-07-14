@@ -1,0 +1,28 @@
+.item {
+ display: flex;
+ align-items: center;
+ margin-top: 25px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.likeWrapper{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.imgLikeWrapper {
+  width: 40px;
+}
+
+.likeBtn {
+  background-color: white;
+  border: none;
+}

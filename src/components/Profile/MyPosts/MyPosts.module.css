@@ -1,0 +1,27 @@
+.posts {
+  margin: 15px;
+}
+
+.textarea {
+  width: 70%;
+  height: 60px;
+  margin-right: 25px;
+  padding: 10px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.btn {
+  background-color: #54595F;
+  border: none;
+  padding: 10px;
+  color: white;
+}
+
+.btn:active{
+  background-color: #7A7A7A;
+}

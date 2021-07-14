@@ -1,0 +1,55 @@
+.wrapper {
+  display: flex;
+  flex-grow: 1;
+  padding: 15px;
+  background-color: #7A7A7A;
+}
+
+h1 {
+  padding: 0 15px 15px 0;
+}
+
+.dialogsWrapper, .messagesWrapper {
+  background-color: white;
+  padding: 15px;
+}
+
+.dialogsWrapper {
+  border-right: 2px solid #54595F;
+  width: 20%;
+}
+
+.messagesWrapper {
+  width: 80%;
+}
+
+.blockSendMessage {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.textarea {
+  width: 80%;
+  margin: 15px;
+  padding: 10px;
+  font-size: 15px;
+  height: 90px;
+}
+
+.btn {
+  background-color: #54595F;
+  border: none;
+  padding: 10px;
+  color: white;
+}
+
+.btn:active{
+  background-color: #7A7A7A;
+}
