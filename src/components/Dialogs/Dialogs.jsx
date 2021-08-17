@@ -3,13 +3,15 @@ import classes from './Dialogs.module.css';
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
 
-export default function Dialogs({dialogsPage}) {
-    let elementTextarea = React.createRef()
+export default function Dialogs( { dialogsPage, sendMessage, updateTextarea } ) {
+    let onSendMessage = () => {
+        sendMessage();
+    }
+    let onUpdateTextarea = (event) => {
+        let text = event.target.value;
+        updateTextarea(text)
+    }
 
-        let showText = () => {
-            let text = elementTextarea.current.value;
-            alert(text)
-        }
     return (
         <div>
             <h1>Dialogs</h1>
@@ -25,8 +27,8 @@ export default function Dialogs({dialogsPage}) {
                     <div className={classes.avatar}>
                         <img src="https://i.pinimg.com/originals/f5/27/41/f52741fb62bf1d821948a49204406bdc.jpg" width="100%" alt="" />
                     </div>
-                    <textarea className={classes.textarea} ref={elementTextarea}></textarea>
-                    <button className={classes.btn} onClick={showText}>Send</button>
+                    <textarea className={classes.textarea} onChange={onUpdateTextarea} value={dialogsPage.newMessageText} placeholder="Enter your message"/>
+                    <button className={classes.btn} onClick={onSendMessage}>Send</button>
                 </div>
                 </div>
                 

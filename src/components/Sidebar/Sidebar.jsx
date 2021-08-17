@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Friend from './Friend/Friend';
 
 export default function Sidebar({sidebar}) {
+    debugger
     return (
       <div className={classes.sidebarWrapper}>
         <nav className={classes.nav}>

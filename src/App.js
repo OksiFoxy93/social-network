@@ -1,22 +1,23 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
-import Sidebar from './components/Sidebar/Sidebar';
-import Profile from './components/Profile/Profile';
-import Dialogs from './components/Dialogs/Dialogs';
 import News from './components/News/News';
 import Music from './components/Music/Music';
-import {Route, BrowserRouter} from 'react-router-dom'
+import { Route, BrowserRouter } from 'react-router-dom'
+import DialogsContainer from "./components/Dialogs/DialogsContainer";
+import ProfileContainer from "./components/Profile/ProfileContainer";
+import SidebarContainer from "./components/Sidebar/SidebarContainer";
 
-function App({state, addPost, updateTextareaPost}) {
+function App() {
+  debugger
   return (
     <BrowserRouter>
     <div className="app-wrapper">
       <Header />
-      <Sidebar sidebar={state.sidebar}/>
+      <SidebarContainer />
       <div className="app-content">
-        <Route path="/profile" render={ () => <Profile profilePage={state.profilePage} addPost={addPost} updateTextareaPost={updateTextareaPost}/> } />
-        <Route path="/dialogs" render={ () => <Dialogs dialogsPage={state.dialogsPage}/>} />
+        <Route path="/profile" render={ () => <ProfileContainer /> } />
+        <Route path="/dialogs" render={ () => <DialogsContainer/> } />
         <Route path="/news" component={News} />
         <Route path="/music" component={Music} />
       </div>

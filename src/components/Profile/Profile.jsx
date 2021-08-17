@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './Profile.module.css';
-import MyPosts from './MyPosts/MyPosts';
 import ProfileInfo from './MyPosts/ProfileInfo/ProfileInfo';
+import MyPostsContainer from "./MyPosts/MyPostsContainer";
 
-export default function Profile({profilePage, addPost, updateTextareaPost}) {
+export default function Profile( { profilePage } ) {
     return (
         <div>
 
@@ -13,8 +13,9 @@ export default function Profile({profilePage, addPost, updateTextareaPost}) {
 
         <ProfileInfo profileData={profilePage.profileData}/>
 
-        <MyPosts postData={profilePage.postData} src={profilePage.profileData.src} addPost={addPost} newPostText={profilePage.newPostText} updateTextareaPost={updateTextareaPost}/>
+        <MyPostsContainer/>
       
       </div>
     )
 }
+
