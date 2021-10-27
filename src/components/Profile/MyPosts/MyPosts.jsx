@@ -2,7 +2,7 @@ import React from 'react';
 import Post from './Post/Post';
 import classes from './MyPosts.module.css';
 
-export default function MyPosts({postData, src, addPost, updateTextareaPost, newPostText}) {
+export default function MyPosts({postData, photos, addPost, updateTextareaPost, newPostText}) {
   let elementTextarea = React.createRef()
 
   let onAddPost = () => {
@@ -13,7 +13,6 @@ export default function MyPosts({postData, src, addPost, updateTextareaPost, new
     updateTextareaPost(text);
   }
 
-debugger
       return (
       <div className={classes.posts}>
         <div>
@@ -25,7 +24,7 @@ debugger
           </div>
 
         <div className="posts">
-          {postData.map( el => <Post src={src} text={el.text} likes={el.likes} />)}
+          {postData.map( el => <Post key={el.id} photos={photos} text={el.text} likes={el.likes} />)}
         </div>
       </div>
       

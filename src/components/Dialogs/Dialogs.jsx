@@ -17,10 +17,10 @@ export default function Dialogs( { dialogsPage, sendMessage, updateTextarea } ) 
             <h1>Dialogs</h1>
             <div className={classes.wrapper}>
                 <div className={classes.dialogsWrapper}>
-                    {dialogsPage.dialogsData.map( el => <DialogItem name={el.name} path={el.path} src={el.src}/> )}
+                    {dialogsPage.dialogsData.map( el => <DialogItem key={el.id}  name={el.name} path={el.path} src={el.src} /> )}
                 </div>
                 <div className={classes.messagesWrapper}>
-                    {dialogsPage.messageData.map( el => <Message id={el.id} name={el.name} message={el.message} src={el.src} /> )}       
+                    {dialogsPage.messageData.map( el => <Message key={el.id} id={el.id} name={el.name} message={el.message} src={el.src} /> )}
 
                 <hr />
                 <div className={classes.blockSendMessage}>

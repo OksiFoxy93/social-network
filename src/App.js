@@ -7,19 +7,20 @@ import { Route, BrowserRouter } from 'react-router-dom'
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
 import SidebarContainer from "./components/Sidebar/SidebarContainer";
+import UsersPageContainer from "./components/UsersPage/UsersPageContainer";
 
 function App() {
-  debugger
   return (
     <BrowserRouter>
-    <div className="app-wrapper">
       <Header />
+    <div className="app-wrapper">
       <SidebarContainer />
       <div className="app-content">
-        <Route path="/profile" render={ () => <ProfileContainer /> } />
+        <Route path="/profile/:userId?" render={ () => <ProfileContainer /> } />
         <Route path="/dialogs" render={ () => <DialogsContainer/> } />
         <Route path="/news" component={News} />
         <Route path="/music" component={Music} />
+        <Route path="/find-user" render={ () => <UsersPageContainer /> } />
       </div>
     </div>
     </BrowserRouter>
@@ -27,3 +28,4 @@ function App() {
 }
 
 export default App;
+

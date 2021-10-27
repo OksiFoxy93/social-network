@@ -1,8 +1,8 @@
 .sidebarWrapper {
-  grid-area: nav;
   background-color: #54595F;
-  height: 100vh;
   margin-top: 15px;
+  width: 20%;
+  min-height: 100vh;
 }
 
 .nav ul {
@@ -28,7 +28,7 @@
 
 .friendBlock {
   display: flex;
-  margin: 0px 15px;
+  margin: 0 15px;
   justify-content: space-between;
   flex-wrap: wrap;
 }

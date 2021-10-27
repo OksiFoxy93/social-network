@@ -1,0 +1,53 @@
+.wrapper {
+  display: flex;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.followbtn {
+  text-align: center;
+  width: 65px;
+  background-color: #54595F;
+  border: none;
+  padding: 5px;
+  margin-top: 5px;
+  color: white;
+}
+
+.followbtn:hover {
+  background-color: #474b50;
+}
+
+.unfollowbtn:hover {
+  background-color: #599ab6;
+}
+
+.unfollowbtn {
+  background-color: #6EC1E4;
+}
+
+.body {
+  border: 2px solid #54595F;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.statusClass {
+  font-size: 14px;
+}
+
+.countryDetails {
+  font-style: italic;
+  justify-content: flex-end;
+}

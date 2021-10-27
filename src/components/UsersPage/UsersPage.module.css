@@ -1,0 +1,44 @@
+.wrapper {
+    width: 70%;
+    margin-left: 50px;
+}
+
+.pagination {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.pagination span {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.pagination span:hover{
+    text-decoration: underline;
+}
+
+.showBtn {
+    text-align: center;
+    background-color: #54595F;
+    border: none;
+    padding: 10px 50px;
+    color: white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.showBtn:hover {
+    background-color: #474b50;
+}
+
+.selectedPage {
+    font-weight: bold;
+}
+
+.preloaderStyle img{
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+    width: 100px;
+}
